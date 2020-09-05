@@ -1,19 +1,27 @@
 # -*- coding: utf-8 -*-
 """
-Created on Wed Sep  2 15:08:15 2020
+Created on Sat Sep  5 19:33:04 2020
 
 @author: shata
 """
-#Drink Water Reminder application using Python
-import time
-from plyer import notification
-if __name__=="__main__":
-    while True:
-        
-        notification.notify(
-            title = "Please Drink Water now!!",
-            message = "Adequate daily fluid intake is: About 15.5 cups (3.7 liters) of fluids for men. About 11.5 cups (2.7 liters) of fluids a day for women.",
-            app_icon = "C:\Python Projects\water reminder\waterglass.ico",
-            timeout=10
-        )        
-        time.sleep(60*60)
+#Password Generator in Python
+import string
+import random
+s1=string.ascii_lowercase
+#print(s1)
+s2=string.ascii_uppercase
+#print(s2)
+s3=string.digits
+#print(s3)
+s4=string.punctuation
+#print(s4)
+pwdlen=int(input("enter length of password\n"))
+s=[]
+s.extend(list(s1))
+s.extend(list(s2))
+s.extend(list(s3))
+s.extend(list(s4))
+#print(s)
+random.shuffle(s)
+#print(s)
+print("".join(s[0:pwdlen]))
