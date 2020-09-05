@@ -4,7 +4,7 @@ Created on Wed Sep  2 15:08:15 2020
 
 @author: shata
 """
-
+#Drink Water Reminder application using Python
 import time
 from plyer import notification
 if __name__=="__main__":
